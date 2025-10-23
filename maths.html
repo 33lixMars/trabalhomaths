@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down" />
+    <link rel="stylesheet" href="maths.css">
+    <title>Trabalho de Matematica 11º Inforgest</title>
+</head>
+<body>
+   <div>
+        <ul class="nav-links">
+            <li><a href="#cientifica">Calculadora cientifica</a></li>
+            <li><a href="#financeira">Calculadora financeira</a></li>
+            <li><a href="#">Analise de Balanço<span class="material-symbols-outlined">
+arrow_drop_down</span></a>
+                <ul hidden>
+                    <li><a href="#b-patrimonial">Balanço Patrimonial</a></li>
+                    <li><a href="#b-sintetico">Balanço Sintetico</a></li>
+                    <li><a href="#b-analitico">Balanço Analitico</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sucessões<span class="material-symbols-outlined">
+arrow_drop_down</span></a>
+                <ul hidden>
+            <li><a href="#s-ortognometricas"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+
+    <div id="tela-calculos">
+        <section id="tela">
+            <div id="res"></div>
+        </section>
+    </div>
+    <div id="teclado">
+        <div class="board" role="group" arial-label="teclas da calculadora">
+
+        <!--Area das funções cientificas-->
+        <button class="tecla functions" data-value="sin">sin</button>
+        <button class="tecla functions" data-value="cos">cos</button>
+        <button class="tecla functions" data-value="tan">tan</button>
+        <button class="tecla functions" data-value="asin">asin</button>
+        <button class="tecla functions" data-value="acos">acos</button>
+        <button class="tecla functions" data-value="atan">atan</button>
+       <!------------------------------------------------------>
+        <!--row2 exponentes, constantes, etc-->
+        <button class="tecla functions" data-value="ln">ln</button>
+        <button class="tecla functions" data-value="log">log</button>
+        <button class="tecla functions" data-value="^">^</button>
+        <button class="tecla functions" data-value="sqrt">√</button>
+        <button class="tecla const" data-value="pi">π</button>
+        <button class="tecla const" data-value="e">e</button>
+        <!------------------------------------------------------>
+        <!--row3 parentes e factorial-->
+        <button class="tecla" data-value="(">(</button>
+        <button class="tecla" data-value=")">)</button>
+        <button class="tecla" data-value="!">!</button>
+        <button class="tecla" data-value="exp">exp</button>
+        <button class="tecla accao" data-value="limpar">C</button>
+        <button class="tecla accao" data-value="apagar">⌫</button>
+        <!------------------------------------------------------>
+        <!--row4 numeros cima-->
+        <button class="tecla num" data-value="7">7</button>
+        <button class="tecla num" data-value="8">8</button>
+        <button class="tecla num" data-value="9">9</button>
+        <button class="tecla operador" data-value="/">÷</button>
+        <button class="tecla operador" data-value="*">×</button>
+        <button class="tecla operador" data-value="-">−</button>
+        <!------------------------------------------------------>
+        <!--row5 numeros meio-->
+        <button class="tecla num" data-value="4">4</button>
+        <button class="tecla num" data-value="5">5</button>
+        <button class="tecla num" data-value="6">6</button>
+        <button class="tecla operador" data-value="+">+</button>
+        <button class="tecla" data-value="ans">Ans</button>
+        <button class="tecla" data-value="()"></button>
+        <!------------------------------------------------------>
+        <!--row6 numeros baixo-->
+        <button class="tecla num" data-value="1">1</button>
+        <button class="tecla num" data-value="2">2</button>
+        <button class="tecla num" data-value="3">3</button>
+        <button class="tecla num" data-value="0">0</button>
+        <button class="tecla" data-value=".">.</button>
+        <button class="tecla accao" data-value="eval">=</button>
+        <!------------------------------------------------------>
+        </div>
+        <!--teclas cientificas adicionnais-->
+        <div class="scientific-panel" role="group" aria-label="scientific keys">
+            <!-- memory and mode keys -->
+            <button class="tecla scientific-key" data-value="mc">MC</button> <!-- memory clear -->
+            <button class="tecla scientific-key" data-value="mr">MR</button> <!-- memory recall -->
+            <button class="tecla scientific-key" data-value="mplus">M+</button> <!-- memory add -->
+            <button class="tecla scientific-key" data-value="mminus">M-</button> <!-- memory subtract -->
+            <button class="tecla scientific-key" data-value="deg">DEG</button> <!-- toggle degrees -->
+            <button class="tecla scientific-key" data-value="rad">RAD</button> <!-- toggle radians -->
+
+            <!-- additional scientific operators -->
+            <button class="tecla scientific-key" data-value="pow">x^y</button>
+            <button class="tecla scientific-key" data-value="root">y√x</button>
+            <button class="tecla scientific-key" data-value="mod">mod</button>
+            <button class="tecla scientific-key" data-value="%">%</button>
+            <button class="tecla scientific-key" data-value="abs">abs</button>
+            <button class="tecla scientific-key" data-value="rand">rand</button>
+
+            <!-- advanced functions -->
+            <button class="tecla scientific-key" data-value="gamma">Γ</button>
+            <button class="tecla scientific-key" data-value="erf">erf</button>
+            <button class="tecla scientific-key" data-value="sinh">sinh</button>
+            <button class="tecla scientific-key" data-value="cosh">cosh</button>
+            <button class="tecla scientific-key" data-value="tanh">tanh</button>
+            <button class="tecla scientific-key" data-value="inv">1/x</button>
+        </div>
+    </div>
+    
+</body>
+<script src="maths.js"></script>
+</html>
